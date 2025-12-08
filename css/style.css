@@ -1,28 +1,30 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
 }
 
-:root{
-    --primary-color: #8f0101;
-    --secondary-color: #bb1515;
+:root {
+  --primary-color: #8f0101;
+  --secondary-color: #bb1515;
 
-    --background-primary-color: #ffffff;
-    --background-secondary-color: #f5f5f5;
-    --background-tertiary-color: #000000;    
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
 
-    --text-primary-color: #222222;
-    --text-secondary-color: #ffffff;
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
 
-    --titles-weights: 700;
-    --text-weights: 400;
-    --menu-weights: 500;
+  --titles-weights: 700;
+  --text-weights: 400;
+  --menu-weights: 500;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -38,6 +40,7 @@
   }
 }
 
+
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
@@ -46,18 +49,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -65,19 +81,21 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
-h1{
-    font-family: "Montserrat";
-    font-weight: var(--titles-weights);
-    color: var(--primary-color);
-}
+
